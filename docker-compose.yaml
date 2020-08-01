@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+
+  mysql-development:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: verysafepassword
+      MYSQL_DATABASE: musiclibrary
+    ports:
+      - "3308:3306"
+
+#  admin:
+#    image: adminer
+#    ports:
+#      - "8090:8090"
